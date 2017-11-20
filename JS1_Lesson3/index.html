@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- Задание 1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100
+        &lt;!&ndash;Ничего проще не придумал :)&ndash;&gt;
+
+    <script>
+        console.log("Ответ на первое задание");
+//      Создаем массив от 1 до 100
+        var arr = [];
+        var end = 1;
+        while (end < 100){
+            end++;
+            arr.push(end);
+        }
+//      Удаляем все четные цифры
+        var a = 2;
+        var b = 2;
+        while (a <= 100){
+            a += b;
+                arr.splice(arr.indexOf(a), 1);
+        }
+//      Удаляет все цифры которые деляться на нечетные до 10
+        a = 4;
+        b = 3;
+        while (a < 100){
+            if (a % b ===0 && arr.indexOf(a) !== -1){
+                arr.splice(arr.indexOf(a), 1);
+            }else {
+                a++;
+            }
+        }
+
+        a = 6;
+        b = 5;
+        while (a < 100) {
+            if (a % b === 0 && arr.indexOf(a) !== -1) {
+                arr.splice(arr.indexOf(a), 1);
+            } else {
+                a++;
+            }
+        }
+
+        a = 8;
+        b = 7;
+        while (a < 100) {
+            if (a % b === 0 && arr.indexOf(a) !== -1) {
+                arr.splice(arr.indexOf(a), 1);
+            } else {
+                a++;
+            }
+        }
+
+        console.log(arr);
+
+    </script>
+
+&lt;!&ndash;Задание 2.  С помощью цикла do…while написать функцию для вывода чисел от 0 до 10, чтобы результат выглядел так:
+                0 – это ноль
+                1 – нечетное число
+                2 – четное число
+                3 – нечетное число&ndash;&gt;
+
+    <script>
+        console.log("Ответ на второе задание");
+        var a = -1;
+        do {
+            a++;
+            if (a === 0){
+                console.log(a, "- это ноль");
+            } else if (a % 2 ===0){
+                console.log(a, "- это четное число");
+            } else {
+                console.log(a, "- это нечетное число");
+            }
+        } while (a < 10);
+
+
+    </script>
+
+&lt;!&ndash;Задание 3.  Вывести с помощью цикла for числа от 0 до 9, НЕ используя тело цикла. То есть выглядеть должно вот так:
+                for(…){// здесь пусто}&ndash;&gt;
+
+    <script>
+        console.log("Ответ на третье задание");
+        var i;
+        for ( i = 0; i <= 9; i++){
+            console.log(i);
+        }
+    </script>
+&lt;!&ndash;Задание 4.  Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть
+                20 рядов, а не 5:&ndash;&gt;
+
+    <script>
+        console.log("Ответ на четвертое задание");
+        var arr = [];
+        var end = 0;
+        while (end < 20){
+            end++;
+            arr.push('x');
+            console.log(arr);
+        }
+    </script>-->
+
+<script>
+    var i = 0;
+    function task1( i < 100) {
+        console.log(i++);
+        return task1;
+    }
+</script>
+
+</body>
+</html>
